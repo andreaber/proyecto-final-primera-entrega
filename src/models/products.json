@@ -1,0 +1,156 @@
+[
+	{
+		"id": 1,
+		"title": "Apple iPad",
+		"description": "La tableta perfecta para reemplazar tu computadora",
+		"price": 250,
+		"thumbnail": [
+			"ruta-imagen-3.jpg",
+			"ruta-imagen-4.jpg"
+		],
+		"code": "4321",
+		"category": "tecnologia",
+		"stock": 18,
+		"status": true
+	},
+	{
+		"id": 2,
+		"title": "iPhone 4",
+		"description": "El primer iPhone con cámara frontal y FaceTime",
+		"price": 390,
+		"thumbnail": [
+			"ruta-imagen-5.jpg",
+			"ruta-imagen-6.jpg"
+		],
+		"code": "7890",
+		"category": "tecnologia",
+		"stock": 25,
+		"status": true
+	},
+	{
+		"id": 3,
+		"title": "Samsung Galaxy Note",
+		"description": "Un teléfono inteligente de alta calidad de Samsung",
+		"price": 420,
+		"thumbnail": [
+			"ruta-imagen-7.jpg",
+			"ruta-imagen-8.jpg"
+		],
+		"code": "1857",
+		"category": "tecnologia",
+		"stock": 11,
+		"status": true
+	},
+	{
+		"id": 4,
+		"title": "Microsoft Surface",
+		"description": "La mejor experiencia en tabletas y portátiles Windows",
+		"price": 190,
+		"thumbnail": [
+			"ruta-imagen-9.jpg",
+			"ruta-imagen-10.jpg"
+		],
+		"code": "2316",
+		"category": "tecnologia",
+		"stock": 21,
+		"status": true
+	},
+	{
+		"id": 5,
+		"title": "Samsung Smart Watch",
+		"description": "Un reloj inteligente con estilo y funcionalidad",
+		"price": 280,
+		"thumbnail": [
+			"ruta-imagen-11.jpg",
+			"ruta-imagen-12.jpg"
+		],
+		"code": "4367",
+		"category": "tecnologia",
+		"stock": 33,
+		"status": true
+	},
+	{
+		"id": 6,
+		"title": "Intelligent Ring",
+		"description": "Un timbre inteligente con cámara para mayor seguridad",
+		"price": 95,
+		"thumbnail": [
+			"ruta-imagen-13.jpg",
+			"ruta-imagen-14.jpg"
+		],
+		"code": "8543",
+		"category": "tecnologia",
+		"stock": 9,
+		"status": true
+	},
+	{
+		"id": 7,
+		"title": "Amazon Echo",
+		"description": "Un altavoz inteligente con Alexa para controlar tu hogar",
+		"price": 170,
+		"thumbnail": [
+			"ruta-imagen-15.jpg",
+			"ruta-imagen-16.jpg"
+		],
+		"code": "2980",
+		"category": "tecnologia",
+		"stock": 12,
+		"status": true
+	},
+	{
+		"id": 8,
+		"title": "AirPods",
+		"description": "Audífonos inalámbricos de Apple con sonido de alta calidad",
+		"price": 110,
+		"thumbnail": [
+			"ruta-imagen-17.jpg",
+			"ruta-imagen-18.jpg"
+		],
+		"code": "9306",
+		"category": "tecnologia",
+		"stock": 27,
+		"status": true
+	},
+	{
+		"id": 9,
+		"title": "Apple Macintosh",
+		"description": "Una computadora revolucionaria en la interacción humano-computadora",
+		"price": 850,
+		"thumbnail": [
+			"ruta-imagen-19.jpg",
+			"ruta-imagen-20.jpg"
+		],
+		"code": "5408",
+		"category": "tecnologia",
+		"stock": 5,
+		"status": true
+	},
+	{
+		"id": 10,
+		"title": "Sony Trinitron TV",
+		"description": "Un televisor con tecnología avanzada y colores vibrantes",
+		"price": 720,
+		"thumbnail": [
+			"ruta-imagen-1.jpg",
+			"ruta-imagen-2.jpg"
+		],
+		"code": "7334",
+		"category": "tecnologia",
+		"stock": 15,
+		"status": true
+	},
+	{
+		"id": 12,
+		"title": "Notebook HP Pantalla de 15.6 Pulgadas",
+		"description": "Notebook Hp con pantalla de 15.6 pulgadas, con bisel microborde, antirreflex y procesador AMD Ryzen7",
+		"price": 2500,
+		"thumbnail": [
+			"ruta-imagen-23.jpg",
+			"ruta-imagen-24.jpg"
+		],
+		"code": "2953",
+		"category": "tecnologia",
+		"stock": 12,
+		"status": true
+	}
+]
