@@ -70,5 +70,14 @@
 				"quantity": 2
 			}
 		]
+	},
+	{
+		"id": 9,
+		"products": [
+			{
+				"product": 10,
+				"quantity": 2
+			}
+		]
 	}
 ]

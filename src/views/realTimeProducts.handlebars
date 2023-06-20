@@ -1,0 +1,70 @@
+<div class="container bg-primary-subtle border border-primary-subtle">
+    <h2 class="text-start text-primary-emphasis py-2">En Tiempo Real: Lista de Productos</h2>
+    <hr class="text-white border-primary mb-5"/>
+    <div class="card mb-5 col-md-4">
+        <div class="card-header text-center">
+            <h5 class="fw-bolder">Formulario para agregar producto</h5>
+        </div>
+        <div class="card-body">
+            <form id="form">
+                <div class="mb-2">
+                    <label for="title" class="form-label">Título</label>
+                    <input type="text" class="form-control" name="title" id="title" required/>
+                </div>
+                <div class="mb-2">
+                    <label for="description" class="form-label">Descripción</label>
+                    <input type="text" class="form-control" name="description" id="description" required/>
+                </div>
+                <div class="mb-2">
+                    <label for="Price" class="form-label">Precio</label>
+                    <input type="number" class="form-control" name="Price" id="price" step="0.01" required/>
+                </div>
+                <div class="mb-2">
+                    <label for="code" class="form-label">Código</label>
+                    <input type="text" class="form-control" name="code" id="code" required/>
+                </div>
+                <div class="mb-2">
+                    <label for="Stock" class="form-label">Stock</label>
+                    <input type="number" class="form-control" name="Stock" id="stock" required/>
+                </div>
+                <div class="mb-2">
+                    <label for="category" class="form-label">Categoría</label>
+                    <input type="text" class="form-control" name="category" id="category" required/>
+                </div>
+                <button type="submit" class="btn btn-outline-success form-control fw-bold" id="addProduct">Agregar Producto</button>
+            </form>
+        </div>
+    </div>
+    <hr class="text-white border-primary mb-5"/>
+    <table class="table table-bordered table-striped table-hover text-start mt-5" id="productsTable">
+        <thead>
+        <tr>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Código</th>
+            <th>Categoría</th>
+            <th>Stock</th>
+            <th>Acción</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        {{#each allProducts}}
+            <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.code}}</td>
+            <td>{{this.category}}</td>
+            <td>{{this.stock}}</td>
+            <td>
+                <button class="btn btn-danger" onclick="deleteProduct({{this.id}})" id="btnDelete">Eliminar</button>
+            </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>

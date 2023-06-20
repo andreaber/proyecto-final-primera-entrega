@@ -7,21 +7,11 @@ router.post("/", async (req, res) => {
     try {
         const addCart = await cartManager.addCart()
         res.json({ message: "Producto agregado al carrito", addCart })
-    } catch (error) {
-        console.log(error)
+    } catch (err) {
+        console.log(err)
         return res.status(500).json({ error: "Error en el servidor" })
     }
 })
-
-// router.get("/", async (req, res) => {
-//     try {
-//         const allCarts = await cartManager.getCarts()
-//         res.send(allCarts)
-//     } catch (error) {
-//         console.log(error)
-//         return res.status(500).json({ error: "Error en el servidor" })
-//     }
-// })
 
 router.get("/:cid", async (req, res) => {
     try {
@@ -31,8 +21,8 @@ router.get("/:cid", async (req, res) => {
             return res.status(404).json({ error: `El carrito con id ${cartId} no existe` })
         } 
         res.json(cart)
-    } catch (error) {
-        console.log(error)
+    } catch (err) {
+        console.log(err)
         return res.status(500).json({ error: "Error en el servidor" })
     }
 })
@@ -50,8 +40,8 @@ router.post("/:cid/products/:pid", async (req, res) => {
             return res.status(404).json({ error: `El carrito con el id ${cartId} no existe` })
         }
         res.json(cart)
-    } catch (error) {
-        console.log(error)
+    } catch (err) {
+        console.log(err)
         return res.status(500).json({ error: "Error en el servidor" })
     }
 })

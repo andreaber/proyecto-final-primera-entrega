@@ -9,8 +9,8 @@
 			"ruta-imagen-4.jpg"
 		],
 		"code": "4321",
-		"category": "tecnologia",
-		"stock": 18,
+		"category": "Tecno",
+		"stock": 10,
 		"status": true
 	},
 	{
@@ -23,8 +23,8 @@
 			"ruta-imagen-6.jpg"
 		],
 		"code": "7890",
-		"category": "tecnologia",
-		"stock": 25,
+		"category": "Tecno",
+		"stock": 16,
 		"status": true
 	},
 	{
@@ -37,7 +37,7 @@
 			"ruta-imagen-8.jpg"
 		],
 		"code": "1857",
-		"category": "tecnologia",
+		"category": "Tecno",
 		"stock": 11,
 		"status": true
 	},
@@ -51,8 +51,8 @@
 			"ruta-imagen-10.jpg"
 		],
 		"code": "2316",
-		"category": "tecnologia",
-		"stock": 21,
+		"category": "Tecno",
+		"stock": 20,
 		"status": true
 	},
 	{
@@ -65,8 +65,8 @@
 			"ruta-imagen-12.jpg"
 		],
 		"code": "4367",
-		"category": "tecnologia",
-		"stock": 33,
+		"category": "Tecno",
+		"stock": 12,
 		"status": true
 	},
 	{
@@ -79,8 +79,8 @@
 			"ruta-imagen-14.jpg"
 		],
 		"code": "8543",
-		"category": "tecnologia",
-		"stock": 9,
+		"category": "Tecno",
+		"stock": 25,
 		"status": true
 	},
 	{
@@ -93,8 +93,8 @@
 			"ruta-imagen-16.jpg"
 		],
 		"code": "2980",
-		"category": "tecnologia",
-		"stock": 12,
+		"category": "Tecno",
+		"stock": 31,
 		"status": true
 	},
 	{
@@ -107,8 +107,8 @@
 			"ruta-imagen-18.jpg"
 		],
 		"code": "9306",
-		"category": "tecnologia",
-		"stock": 27,
+		"category": "Tecno",
+		"stock": 10,
 		"status": true
 	},
 	{
@@ -121,8 +121,8 @@
 			"ruta-imagen-20.jpg"
 		],
 		"code": "5408",
-		"category": "tecnologia",
-		"stock": 5,
+		"category": "Tecno",
+		"stock": 15,
 		"status": true
 	},
 	{
@@ -135,8 +135,8 @@
 			"ruta-imagen-2.jpg"
 		],
 		"code": "7334",
-		"category": "tecnologia",
-		"stock": 15,
+		"category": "Tecno",
+		"stock": 18,
 		"status": true
 	},
 	{
@@ -149,8 +149,19 @@
 			"ruta-imagen-24.jpg"
 		],
 		"code": "2953",
-		"category": "tecnologia",
+		"category": "Tecno",
 		"stock": 12,
+		"status": true
+	},
+	{
+		"id": 13,
+		"title": "Lámpara a Led 5 watt RGB",
+		"description": "Lámpara a led de 5 watts, sistema RGB, con controlador a distancia y ángulo de apertura de 120°",
+		"price": "1100",
+		"thumbnail": [],
+		"code": "9871",
+		"category": "Tecno",
+		"stock": "5",
 		"status": true
 	}
 ]
