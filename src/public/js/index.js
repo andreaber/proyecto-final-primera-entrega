@@ -63,20 +63,21 @@ form.addEventListener("submit", async (e) => {
                 document.querySelector("#stock").value = ""
             }
         }
-    } catch (error) {
-        console.log(error);
+    } catch (err) {
+        console.log(err)
     }
 })
 
 // Función para eliminar un producto
 const deleteProduct = async (id) => {
+    console.log(typeof(id))
     try {
         const res = await fetch(`/api/products/${id}`, {
         method: "delete",
-        });
-        const result = await res.json();
-        if (result.status === "error") throw new Error(result.error);
-        else socket.emit("productList", result.products);
+        })
+        const result = await res.json()
+        if (result.status === "error") throw new Error(result.error)
+        else socket.emit("productList", result.products)
 
         // Mostrar notificación de éxito
         Toastify({
@@ -92,9 +93,8 @@ const deleteProduct = async (id) => {
         },
         onClick: function(){} // Callback after click
         }).showToast();
-
-    } catch (error) {
-        console.log(error);
+    } catch (err) {
+        console.log(err);
     }
 }
 
@@ -115,7 +115,7 @@ socket.on("updatedProducts", (products) => {
             <td>${item.category}</td>
             <td>${item.stock}</td>
             <td>
-            <button class="btn btn-danger" onclick="deleteProduct(${item.id})" id="btnDelete">Delete</button>
+                <button class="btn btn-danger" onclick="deleteProduct(${item.id})" id="btnDelete">Delete</button>
             </td>
         `
         tbody.appendChild(row)

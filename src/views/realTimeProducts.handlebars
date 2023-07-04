@@ -49,19 +49,19 @@
         </tr>
         </thead>
         <tbody id="tbody">
-        {{#each allProducts}}
-            <tr>
-            <td>{{this.title}}</td>
-            <td>{{this.description}}</td>
-            <td>{{this.price}}</td>
-            <td>{{this.code}}</td>
-            <td>{{this.category}}</td>
-            <td>{{this.stock}}</td>
-            <td>
-                <button class="btn btn-danger" onclick="deleteProduct({{this.id}})" id="btnDelete">Eliminar</button>
-            </td>
-            </tr>
-        {{/each}}
+            {{#each allProducts}}
+                <tr>
+                <td>{{this.title}}</td>
+                <td>{{this.description}}</td>
+                <td>{{this.price}}</td>
+                <td>{{this.code}}</td>
+                <td>{{this.category}}</td>
+                <td>{{this.stock}}</td>
+                <td>
+                    <button class="btn btn-danger" onclick="deleteProduct({{this.id}})" id="btnDelete">Eliminar</button>
+                </td>
+                </tr>
+            {{/each}}
         </tbody>
     </table>
 </div>
