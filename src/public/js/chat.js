@@ -47,9 +47,9 @@ Swal.fire({
             position: 'right',
             stopOnFocus: true,
             style: {
-                background: '#00B4DB',
-                background: '-webkit-linear-gradient(to right, #0083B0, #00B4DB)',
-                background: 'linear-gradient(to right, #0083B0, #00B4DB)'
+                background: '#48ff31',
+                background: '-webkit-linear-gradient(to right, #00ac00, #48ff31)',
+                background: 'linear-gradient(to right, #00ac00, #48ff31)'
             },
             onClick: function () {},
         }).showToast()

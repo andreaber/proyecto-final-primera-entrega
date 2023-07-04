@@ -5,13 +5,9 @@ const router = Router()
 
 router.get('/', async (req, res) => {
     try {
-        const limit = req.query.limt 
-        const products = await productModel.find()
-        if (limit) {
-            const limitedProducts = products.slice(0, limit)
-            res.json(limitedProducts)
-        }
-        res.json({ products: products })
+        const limit = req.query.limit || 0
+        const products = await productModel.find().limit(limit).lean().exec()
+        res.status(200).json({ status: 'success', payload: products })
     } catch(err) {
         res.status(500).json({ status: 'error', error: err.message })
     }
@@ -20,11 +16,11 @@ router.get('/', async (req, res) => {
 router.get('/:pid', async (req, res) => {
     try {
         const pid = req.params.pid
-        const product = await productModel.findById(pid)
+        const product = await productModel.findById(pid).lean().exec()
         if (product === null) {
-            res.status(404).json({ error: `El producto con el id ${pid} no se ha encontrado` })
+            return res.status(404).json({ status: 'error', error: `El producto con el id ${pid} no se ha encontrado` })
         } 
-        res.json({ payload: product })
+        res.status(200).json({ status: 'success', payload: product })
     } catch(err) {
         res.status(500).json({ status: 'error', error: err.message })
     }
@@ -46,12 +42,12 @@ router.put('/:pid', async (req, res) => {
     try {
         const pid = req.params.pid
         if (req.body.id !== pid && req.body.id !== undefined) {
-            res.status(404).json({ error: 'No se puede modificar el id del producto' } )
+            return res.status(404).json({ status: 'error', error: 'No se puede modificar el id del producto' } )
         }
         const updated = req.body 
         const productFind = await productModel.findById(pid)
         if (!productFind) {
-            res.status(404).json({ status: 'error', error: 'El producto no existe' })
+            return res.status(404).json({ status: 'error', error: 'El producto no existe' })
         }
         await productModel.updateOne({ _id: pid}, updated)
         const updatedProducts = await productModel.find()
